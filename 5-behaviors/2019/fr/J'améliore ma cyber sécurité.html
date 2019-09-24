@@ -6,16 +6,35 @@
   <meta name="author" content="Bernard Lambeau - blambeau@enspirit.be">
   <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box !important;
+    }
     body {
-      width: 95%;
-      margin: 20px auto;
-      margin-bottom: 0;
+      margin: 1.75cm 1.25cm;
       font-family: 'Muli', sans-serif;
       font-size: 18px;
       color: #333;
     }
+    table:before,
+    table:after {
+      content: "";
+      width: 0.2cm;
+      height: 0.2cm;
+      display: block;
+      position: absolute;
+      top: 0.5cm;
+      left: 0.5cm;
+      color: black;
+      border: 1px solid black;
+      background: black;
+      border-radius: 50%;
+    }
+    table:after {
+      top: 1cm;
+      left: 1.1cm;
+    }
     h1 {
-      margin-top: 0;
+      margin-top: 0cm;
       margin-bottom: 5px;
       font-size: 30px;
       text-align: center;
@@ -44,11 +63,16 @@
       margin-left: -25px;
     }
     p.licence {
-      font-size: 80%;
+      font-size: 70%;
       text-align: center;
       position: fixed;
-      width: 100%;
-      bottom: -15px;
+      bottom: 10px;
+      right: 10px;
+      transform: rotate(270deg) translateX(16.5cm) translateY(-0.4cm);
+      transform-origin: 100% 0%;
+    }
+    @page {
+      margin: 0;
     }
   </style>
 </head>
@@ -59,7 +83,7 @@
       <tbody>
         <tr><td>Je prends soin de mes accès</td></tr>
         <tr><td>J'ai un mot de passe différent sur chaque site, de plus de 10 caractères, impossible à deviner</td></tr>
-        <tr><td>Donc, j'utilise un gestionnaire de mots de passe</td></tr>
+        <tr><td>Donc j'utilise un gestionnaire de mots de passe</td></tr>
         <tr><td>J'active la double authentification (2FA) dès que possible</td></tr>
       </tbody>
       <tbody>
@@ -87,7 +111,7 @@
         <tr><td>Je vérifie toute information choquante, effrayante, émouvante</td></tr>
       </tbody>
     </table>
-    <p class="licence">Octobre 2019, Enspirit SPRL. Distribué sous licence creative commons.</p> 
+    <p class="licence">Version 1.0, Octobre 2019 &mdash; Editeur responsable: Enspirit SPRL &mdash; Distribué sous licence creative commons.</p>
   </article>
 </body>
 </html>
