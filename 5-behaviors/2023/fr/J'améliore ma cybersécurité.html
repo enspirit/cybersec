@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>J'améliore ma cybersécurité</title>
+  <meta name="author" content="Bernard Lambeau - blambeau@enspirit.be">
+  <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box !important;
+    }
+    article {
+      margin: 1.75cm 1.25cm 0 1.25cm;
+      font-family: 'Muli', sans-serif;
+      font-size: 18px;
+      color: #333;
+    }
+    article + article {
+      page-break-before: always;
+    }
+    table:before,
+    table:after {
+      content: "";
+      width: 0.2cm;
+      height: 0.2cm;
+      display: block;
+      position: absolute;
+      top: 0.5cm;
+      left: 0.5cm;
+      color: #F4436C;
+      border: 1px solid #F4436C;
+      background: #F4436C;
+      border-radius: 50%;
+    }
+    table:after {
+      top: 1cm;
+      left: 1.1cm;
+    }
+    h1 {
+      margin-top: 0cm;
+      margin-bottom: 5px;
+      font-size: 30px;
+      text-align: center;
+    }
+    h2 {
+      text-align: center;
+      font-size: 20px;
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    tbody > tr:first-child > td {
+      padding: 20px 0px 10px;
+      font-size: 26px;
+      border: none;
+    }
+    tbody > tr:not(:first-child) > td {
+      padding: 5px 20px 5px 60px;
+    }
+    tbody > tr:not(:first-child) > td:first-child:before {
+      content: '✓ ';
+      font-size: 120%;
+      margin-left: -25px;
+    }
+    p.licence {
+      font-size: 70%;
+      text-align: center;
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      transform: rotate(270deg) translateX(22.5cm) translateY(-0.4cm);
+      transform-origin: 100% 0%;
+      white-space: nowrap;
+    }
+    p.licence a,
+    .enspirit {
+      text-decoration: none;
+      color: #F4436C;
+    }
+    @page {
+      size: A4;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <article>
+    <h1>J'améliore ma cybersécurité</h1>
+    <h2>Comportements clefs pour éviter les plus grands risques</h2>
+    <table>
+      <tbody>
+        <tr><td>Je prends soin de mes accès</td></tr>
+        <tr><td>J'ai un mot de passe différent sur chaque site, de plus de 12 caractères, impossible à deviner</td></tr>
+        <tr><td>Donc j'utilise un gestionnaire de mots de passe reconnu</td></tr>
+        <tr><td>J'active la double authentification (2FA) dès que possible</td></tr>
+      </tbody>
+      <tbody>
+        <tr><td>Mon email est mon pire ennemi</td></tr>
+        <tr><td>Est suspect tout email d'origine inconnue ou que je n'attendais pas</td></tr>
+        <tr><td>Je n'ouvre jamais de pièce jointe d'un email suspect</td></tr>
+        <tr><td>J'évite de suivre un lien inclus dans un email suspect</td></tr>
+      </tbody>
+      <tbody>
+        <tr><td>Mes secrets & données sont à moi seul.e</td></tr>
+        <tr><td>Je ne partage ni mot de passe, ni carte de crédit, ni code PIN, &hellip;</td></tr>
+        <tr><td>Je ne réponds jamais à une demande d'info que je n'attendais pas</td></tr>
+        <tr><td>Je n'utilise pas de wifi non protégé, mes données y sont en danger</td></tr>
+      </tbody>
+      <tbody>
+        <tr><td>Mes appareils sont des forteresses</td></tr>
+        <tr><td>Je verrouille tous mes appareils dès que je m'en éloigne</td></tr>
+        <tr><td>Je maintiens à jour mon système d'exploitation, antivirus & gestionnaire de mots de passe</td></tr>
+        <tr><td>J'évite les clefs USB (et apparentés)</td></tr>
+      </tbody>
+      <tbody>
+        <tr><td>Par défaut je doute, sauf si j'ai bien vérifié</td></tr>
+        <tr><td>Je sais que "si c'est trop beau pour être vrai, ce n'est pas vrai"</td></tr>
+        <tr><td>Je redouble de prudence au moindre doute</td></tr>
+        <tr><td>Je vérifie toute information choquante, effrayante, émouvante</td></tr>
+      </tbody>
+    </table>
+    <p class="licence"><span class="enspirit">Editeur responsable: Enspirit SRL</span> &mdash; Version 1.1, Janvier 2023 &mdash; Distribué sous licence creative commons &mdash; Infos & contributions: <a href="mailto:info@enspirit.be">info@enspirit.be</a></p>
+  </article>
+  <article>
+    <h1>J'améliore ma cybersécurité</h1>
+    <h2>Situations dangereuses, à améliorer immédiatement</h2>
+    <table>
+      <tbody>
+        <tr><td>Mots de passe</td></tr>
+        <tr><td>Un mot de passe utilisé sur plusieurs sites web et non changé depuis 2 ans est compromis.</td></tr>
+        <tr><td>Il est connu dans les bases de données du dark web.</td></tr>
+        <tr><td>Il faut le changer d'urgence.</td></tr>
+      </tbody>
+      <tbody>
+        <tr><td>Virus</td></tr>
+        <tr><td>Un ordinateur de bureau avec accès Internet et sans antivirus est compromis.</td></tr>
+        <tr><td>La présence d'un virus ou d'un trojan est plus que probable.</td></tr>
+        <tr><td>Il faut, à minima, installer un antivirus et scanner la machine immédiatement.</td></tr>
+      </tbody>
+      <tbody>
+        <tr><td>Phishing</td></tr>
+        <tr><td>Un collaborateur qui n'a jamais entendu parler formellement des cyber-risques est compromis.</td></tr>
+        <tr><td>La probabilité qu'il ou elle soit victime d'une tentative de phishing est immense.</td></tr>
+        <tr><td>Il faut, à minima, sensibiliser aux principaux risques cyber pour l'aider à reconnaître les situations dangereuses.</td></tr>
+      </tbody>
+      <tbody>
+        <tr><td>Backups et Plans de reprise</td></tr>
+        <tr><td>Les backups et plans de reprises inexistants et/ou non testés sont compromis.</td></tr>
+        <tr><td>La probabilité de ne pas pouvoir relancer l'entreprise est grande.</td></tr>
+        <tr><td>Il faut, à minima, créer ces plans et backups et les tester régulièrement.</td></tr>
+      </tbody>
+    </table>
+  </article>
+</body>
+</html>
